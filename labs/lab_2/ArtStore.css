@@ -1,0 +1,78 @@
+body {
+  background-image: url("./images/art-background4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: Tahoma, sans-serif;
+
+  margin-left: 10%;
+  margin-top: 0;
+  padding: 0 1em 1em 1em;
+}
+
+header {
+  background-color: white;
+  width: 20em;
+  padding: inherit;
+}
+
+header > h1 {
+  font-size: 3em;
+  font-family: "Six Caps", Tahoma, sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+header > h2 {
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+article {
+  width: 30em;
+  margin-top: 7em;
+  background-color: rgba(255,255,255);
+  background-color: rgba(255,255,255,0.3);
+}
+
+article > h2, p {
+  padding: 0.5em;
+  padding-left: 1em;
+}
+
+article > h2 {
+  font-size: 1.5em;
+  background-color: rgba(255,255,255);
+  background-color: rgba(255,255,255,0.5);
+}
+
+article > p {
+  padding-top: 1em;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+article > #timeline {
+  color: white;
+  padding-top: 0.5em;
+  margin: 0 5em 1em 1em;
+  font-size: 1.2em;
+  background-color: rgba(0,0,0);
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+article > footer {
+  padding: 1em;
+  opacity: 1;
+  background-color: white;
+  background-color: rgba(255,255,255, 1)  !Important;
+}
+
+article > footer > a:before {
+  content: url("./images/email.png");
+  padding-right: 5px;
+  text-decoration: underline;
+}
