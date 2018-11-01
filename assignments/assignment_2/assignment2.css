@@ -70,6 +70,7 @@ main {
 }
 
 #thumbnails img {
+  display: block;
   width: 116px;   
   height: 116px;
   border: solid 1px #ccc;
