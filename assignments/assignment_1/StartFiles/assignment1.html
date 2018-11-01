@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+   <meta charset="utf-8">
+   <title>Assignment 1</title>
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="assignment1.css" />
+</head>
+<body>
+<header>
+  <h1>Share Your Travels</h1>
+  <p>let us know where you've been</p>
+</header>
+<main>
+  <section>
+    <form action="http://www.randyconnolly.com/tests/process.php" method="POST"> 
+      <fieldset>
+        <legend>PHOTO DETAILS</legend>
+        <table>
+          <tr>
+            <td colspan="2">
+              <p>Title</p>
+              <input class="fullInput" name="title" placeholder="Give your photo a descriptive name" />
+            </td> 
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Description</p>
+              <textarea class="fullInput" name="description" rows=4>Adding a rich description will help with search results.</textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="floatingGroup">
+                Continent<br>
+                <select class="longInput" name="continent">
+                  <option value="northamerica">North America</option>
+                  <option value="centralamerica">Central America</option>
+                  <option value="southamerica">South America</option>
+                  <option value="europe">Europe</option>
+                  <option value="africa">Africa</option>
+                  <option value="asia">Asia</option>
+                </select><br>
+                Country<br>
+                <select class="longInput" name="country">
+                  <option value="canada">Canada</option>
+                  <option value="unitedstates">United States</option>    
+                </select><br>
+                City<br>
+                <input class="longInput" name="city" />
+              </div>
+            </td>
+            <td> 
+              <div class="borderGroup">
+                Copyright?<br>
+                <input type="radio" name="copyright" value="allrightsreserved">All rights reserved<br>
+                <input type="radio" name="copyright" value="creativecommons">Creative Commons<br> 
+              </div>
+              <div class="borderGroup">
+                Creative Commons Types<br>
+                <input type="checkbox" name="attribution">Attribution<br>
+                <input type="checkbox" name="noncommerical">Noncommercial<br>
+                <input type="checkbox" name="noderivativeworks">No Derivative Works<br>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="backgroundEmphasize">
+              I accept the software license <input type="checkbox" name="acceptsoftwarelicense" />
+            </td>
+          </tr>
+          <tr>
+            <td>  
+              <div class="floatingGroup">
+                Rate this photo:<br>
+                <input type="number" name="rating" min="1" max="5"/><br>
+                Color Collection:<br>
+                <input type="color" name="colorcollection" /><br>
+              </div>
+            </td>
+            <td>
+              <div class="borderGroup">
+                Date Taken:<br>
+                <input type="date" name="date" /><br>
+                Time Taken:<br>
+                <input type="time" name="time" /><br>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="backgroundEmphasize">
+              <input class="formButton" type="submit" value="Submit">
+              <input class="formButton" type="reset" value="Clear Form">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </section>
+</main>  
+</body>
+</html>
